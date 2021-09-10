@@ -1,0 +1,307 @@
+* {
+  margin: 1px 0px;
+  padding: 0;
+  font: inherit;
+  vertical-align: baseline;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr min(70ch, calc(100% - 16px)) 1fr;
+  grid-column: 2;
+}
+
+h1 {
+  display: grid;
+  grid-column: 2;
+  text-align: center;
+  font-size: 2.3rem;
+  padding: 1.5rem;
+  background-color: #4d4d4d;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+
+form {
+  display: grid;
+  flex-direction: column;
+  width: 100%;
+  grid-column: 2;
+  margin: 0px;
+}
+
+/* ul {
+  margin: 0px;
+}
+
+li {
+  margin: 0px;
+}
+
+#mainbody {
+  display: none;
+  margin-bottom: -1px;
+}
+
+#questions {
+  display: none;
+}
+
+#submitInnerDiv {
+  display: none;
+}
+
+#resetButtonDiv {
+  display: grid;
+  grid-column: 2;
+}
+
+#wrapper {
+  grid-column: 2;
+}
+
+#inputDiv {
+  display: flex;
+}
+
+#numberInput {
+  padding: 1rem 1rem;
+  box-sizing: border-box;
+}
+
+#js109yes {
+  margin-left: 2px;
+}
+
+#mainbody {
+  grid-column: 2;
+}
+
+#moreDetails {
+  display: none;
+  grid-column: 2;
+  margin-top: -1px;
+}
+
+.yesnosubmitbutton {
+  display: flex;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+}
+
+.smallLi {
+  grid-column: 2;
+  list-style-type: none;
+  padding: 0rem;
+  background-color: #f6f6f6;
+  border: solid 1px transparent;
+  overflow: hidden;
+  border-radius: 3px;
+  flex-grow: 2;
+  margin: 0;
+}
+
+.innerLi {
+  grid-column: 2;
+  list-style-type: none;
+  padding: 1rem;
+  background-color: #f6f6f6;
+  border: solid 1px transparent;
+  overflow: hidden;
+  border-radius: 3px;
+  flex-grow: 2;
+  width: 80%;
+}
+
+.flexDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.smallLiInput {
+  display: flex;
+  width: 10%;
+
+}
+
+.smallLi {
+  display: flex;
+}
+
+
+
+
+
+button,
+.submitbutton {
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: #9fbef3;
+  cursor: pointer;
+  margin-left: 2px;
+  padding: 1rem 1.6rem;
+}
+
+button:hover,
+.submitbutton:hover {
+  background-color: #6d95da;
+}
+
+#listdiv {
+  grid-column: 2;
+  display: grid;
+}
+
+.inputWrapper {
+  place-content: center;
+  grid-column: 2;
+  margin: 0.2rem;
+}
+
+input {
+  padding: 1rem 1rem;
+  flex-grow: 2;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgb(255, 255, 255) inset;
+}
+
+input:focus {
+  border-color: #2f95fa;
+}
+
+#addToDo {
+  padding: 0rem 0.9rem;
+  width: 3.5rem;
+  background-color: #d1deee;
+}
+
+.li {
+  display: flex;
+  flex-direction: row;
+  grid-column: 2;
+  margin: 0.2rem;
+}
+
+.liDivAnimation {
+  display: flex;
+  flex-direction: row;
+  grid-column: 2;
+  margin: 0.2rem;
+  animation-duration: 0.5s;
+  animation-name: slideOut;
+}
+
+li {
+  grid-column: 2;
+  list-style-type: none;
+  padding: 1rem;
+  background-color: #f6f6f6;
+  border: solid 1px transparent;
+  overflow: hidden;
+  border-radius: 3px;
+  flex-grow: 2;
+}
+@media (hover: hover) {
+  .liDiv:hover > .buttonDiv {
+    display: flex;
+  }
+}
+
+li:hover {
+  border: 1px solid #333333;
+  overflow: hidden;
+}
+
+#errormessage {
+  color: #f25858;
+}
+
+.buttonDiv {
+  grid-column: 2;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  background-color: #f25858;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #ccc;
+  display: none;
+  visibility: none;
+  cursor: pointer;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+#resetWrapper {
+  place-content: center;
+  display: grid;
+}
+
+#resetButton {
+  padding: 1rem;
+}
+
+#resetButton:hover {
+  background-color: #f25858;
+}
+
+@keyframes slideOut {
+  from {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  to {
+    margin-left: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+#line1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+#line2 {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+#buttonDiv {
+  display: grid;
+  place-content: center;
+}
+
+#resetButton {
+  background-color: #ff7575;
+  padding-inline: 1.5rem;
+} 
+
+*/

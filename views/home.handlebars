@@ -1,0 +1,20 @@
+<h1>Launch School Time Estimator</h1>
+
+<form method="POST" action="/submit">
+  <fieldset>
+    <label for="hours_per_week">How many hours do you study per week?</label>
+    <input type="text" name="hours_per_week" required minlength="1" maxlength="4">
+    <br>
+    <label for="total_hours">How many hours have you done in total?</label>
+    <input type="text" name="" required minlength="1" maxlength="5">
+    <p>Are you on the JavaScript track or the Ruby track?</p>
+    <input type="radio" name="track" value="ruby">
+    <label for="ruby">Ruby</label>
+    <input type="radio" name="track" value="javascript" checked>
+    <label for="javascript">JavaScript</label>
+    <input type="submit" value="Submit">
+
+  </fieldset>
+
+</form>
+
